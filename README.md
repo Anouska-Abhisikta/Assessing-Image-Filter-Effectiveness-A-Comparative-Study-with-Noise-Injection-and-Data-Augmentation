@@ -23,3 +23,15 @@ To provide a more comprehensive evaluation, various types of noise are introduce
 The research culminates in the visualization of the NMSE and PSNR scores for each filtering technique. Two distinct graphs are generated for each filter, one depicting NMSE scores and the other PSNR scores. These graphs offer a comprehensive comparative analysis, shedding light on how each filter fares in terms of noise reduction and signal fidelity under different conditions. The visualizations allow for a clear assessment of the strengths and weaknesses of each filtering technique, providing valuable insights for further research and practical applications.
 
 Through these meticulously planned steps, the research aims to provide a holistic and practical understanding of the performance of various filtering techniques on static images, considering the real-world challenges posed by noise and the benefits brought about by data augmentation.
+
+## Result Analysis
+The result analysis delves into the performance of various image processing filters applied to the MNIST handwritten digit dataset. Different types of noise, including salt and pepper, Gaussian, Poisson, and speckle noise, are considered to evaluate how each filter handles noisy images.
+
+### Filter Accuracy Summary
+The accuracy scores of different filters before and after data augmentation are summarized, revealing compelling insights. The mean filter emerges as the top performer with an exceptional accuracy score of 0.992, indicating its effectiveness in eliminating noise while enhancing overall image clarity. Conversely, the Laplacian filter exhibits the lowest accuracy score of 0.0199, suggesting limitations in noise reduction and feature extraction.
+
+### Insights from Accuracy Scores
+The results underscore the critical importance of filter selection in specific image processing applications. While some filters excel in noise reduction, they may not be optimal for tasks requiring the preservation of fine details or edge detection. Conversely, filters with subpar noise reduction performance could find utility in applications focused on edge detection.
+
+### NMSE and PSNR Analysis
+The analysis includes NMSE and PSNR values for all filters across different noise types. These metrics offer insights into image quality after filtering and the effectiveness of each filter in noise reduction. Filters like the median and Sobel filters achieve higher PSNR scores, indicating superior image quality outcomes. However, filters like the bilateral and Gaussian filters exhibit lower PSNR scores, suggesting potential quality degradation during noise reduction.
