@@ -3,10 +3,15 @@ Research investigates the impact of data augmentation and noise injection on ima
 
 ## Requirements
 opencv-python==4.5.3.56
+
 matplotlib==3.4.3
+
 numpy==1.21.2
+
 scikit-learn==0.24.2
+
 scipy==1.7.1
+
 tensorflow==2.7.0
 
 ## About the dataset
